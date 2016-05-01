@@ -16,6 +16,10 @@ var gulp = require('gulp'),
     del = require('del');
 
 
+gulp.task('hello', function(){
+
+});
+
 gulp.task('sass', function(){
   gulp.src('./source/stylesheets/**/*.scss')
     .pipe(sourcemaps.init())
