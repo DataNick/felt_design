@@ -29,7 +29,7 @@ gulp.task('watch', function(){
   livereload.listen();
 
   gulp.watch('./source/stylesheets/**/*.scss', ['sass']);
-  gulp.watch(['./source/stylesheets/style.css'], function(files){
+  gulp.watch( './source/stylesheets/style.css', function(files){
     livereload.changed(files)
   });
 });
