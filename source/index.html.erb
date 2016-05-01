@@ -10,13 +10,15 @@ title: Welcome to Felter Lady Designs
   <p>Welcome to Felter Lady Designs. I'm Jane Altobelli and I'm a lifelong felt crafter. I typically work with wool, yarn and an assortment of craft material to realize my art. I also teach seminars and tutorials on felting. Some of my pieces are showcased on this site though they are by no means the extent of my portfolio. If you would like to contact me, please send a quick message with your attached email on the form provided below. I'm located in Ontario, Canada.</p>
 </div><!-- .welcome -->
 
-<form action = "http://www.focuspocus.io/magic/your@target.com" method = "POST" enctype = "multipart/form-data">
+<form action = "http://www.focuspocus.io/magic/your@target.com" method = "POST" class = "form">
   <fieldset>
     <legend>Contact Me</legend>
     <label for = "fullName">Full name:</label>
-    <input type = "text" name = "fullname" id = "fullName">
-    <label for = "comment">Comment</label>
-    <textarea type = "textarea" name = "comment" id = "comment"></textarea>
+    <input type = "text" name = "fullname" placeholder = "e.g. Jane Smith" id = "fullName">
+    <label for = "email">Email:</label>
+    <input type = "text" name = "email" placeholder = "e.g. smith@email.com" id = "email">
+    <label for = "comment">Comment:</label>
+    <textarea type = "textarea" name = "comment" placeholder = "e.g. 'I'm interested in...'" id = "comment"></textarea>
     <input type = "submit" value = "Send">
   </fieldset>
 </form>
