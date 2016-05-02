@@ -1,8 +1,16 @@
 body {
-  background: #ECC561;
+  background-image: url('../images/Death_to_stock_photography_farm_3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
+}
+
+.container {
+  margin: 5% 5%;
+  background: #F9F9F9;
 }
 
 .logo img {

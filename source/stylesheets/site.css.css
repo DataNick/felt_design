@@ -365,7 +365,9 @@ textarea {
   /* 2 */ }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #1565c0;
   border: 0;
   border-radius: 3px;
@@ -380,7 +382,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   padding: 0.75em 1.5em;
   text-decoration: none;
   transition: background-color 150ms ease;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
@@ -446,7 +451,9 @@ textarea {
   resize: vertical; }
 
 [type="search"] {
-  appearance: none; }
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
 [type="checkbox"],
 [type="radio"] {
@@ -556,9 +563,15 @@ html {
   box-sizing: inherit; }
 
 .cards {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .card {
   background-color: #f7f7f7;
@@ -566,8 +579,12 @@ html {
   border-radius: 3px;
   box-shadow: 0 2px 4px #e6e6e6;
   cursor: pointer;
-  flex-basis: 15em;
-  flex-grow: 1;
+  -webkit-flex-basis: 15em;
+      -ms-flex-preferred-size: 15em;
+          flex-basis: 15em;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 0 1em 1.5em 1em;
   position: relative;
   transition: all 0.2s ease-in-out; }
