@@ -2,8 +2,17 @@
 $medium-screen: 600px;
 $large-screen: 900px;
 
+//Google fonts
+
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+//font variables
+$satisfy: 'Satisfy', cursive;
+$quicksand: 'Quicksand', sans-serif;
+
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: $quicksand;
 $heading-font-family: $base-font-family;
 
 // Font Sizes

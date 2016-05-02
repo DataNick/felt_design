@@ -46,24 +46,31 @@
 
     h1 {
       margin-bottom: 0.9em;
+      font-family: $quicksand;
     }
 
     h4 {
-      background: #BBB;
+      background: #009688;
       color: white;
       display: inline-block;
-      font-size: 0.75em;
+      font-family: $satisfy;
+      font-size: 2em;
+      border-radius: 60%;
       margin-bottom: 1.3em;
-      padding: 3px 8px;
-      text-transform: uppercase;
+      padding: 13px 81px;
+      text-transform: lowercase;
     }
 
     p {
       color: $base-font-color;
       line-height: $base-line-height;
       margin-bottom: 3em;
+      padding-top: 8%;
+      font-family: $base-font-family;
+      font-size: 1.25em;
     }
   }
 
   @include reset-display();
+
 }
