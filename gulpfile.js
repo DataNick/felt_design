@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
+    plumber = require('gulp-plumber'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     sass = require('gulp-sass'),
@@ -20,15 +21,16 @@ gulp.task('hello', function(){
   console.log("Hello There");
 });
 
-function handleError(err) {
-  console.log(err.toString());
-  this.emit('end');
-}
+
 
 gulp.task('sass', function(){
   return gulp.src('./source/stylesheets/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer('last 2 version'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(cssnano())
     .pipe(gulp.dest('./source/stylesheets'))
+    .pipe(notify({ message: 'Styles task complete' }));
 });
 
 // gulp.task('sass', function(){
