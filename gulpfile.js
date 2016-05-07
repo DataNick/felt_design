@@ -14,7 +14,9 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     pngquant = require('imagemin-pngquant'),
-    del = require('del');
+    del = require('del'),
+    imageminWebp = require('imagemin-webp'),
+    webp = require('gulp-webp');
 
 
 gulp.task('hello', function(){
@@ -34,9 +36,15 @@ gulp.task('hello', function(){
 // });
 
 
-gulp.task('jpgs', function() {
+// gulp.task('jpgs', function() {
+//   return gulp.src('./source/images/*.jpg')
+//     .pipe(imagemin({ progressive: true }))
+//     .pipe(gulp.dest('./source/images'));
+// });
+
+gulp.task('small', function(){
   return gulp.src('./source/images/*.jpg')
-    .pipe(imagemin({ progressive: true }))
+    .pipe(webp())
     .pipe(gulp.dest('./source/images'));
 });
 
