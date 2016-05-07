@@ -26,7 +26,9 @@
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
+    "gulp-webp": "^2.3.0",
     "imagemin-pngquant": "^5.0.0",
+    "imagemin-webp": "^3.1.1",
     "jshint": "^2.8.0",
     "lodash": "^4.11.1"
   }
